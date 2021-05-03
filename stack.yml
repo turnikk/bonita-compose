@@ -27,8 +27,6 @@ services:
       - PLATFORM_LOGIN=${PLATFORM_LOGIN}
       - PLATFORM_PASSWORD=${PLATFORM_PASSWORD}
     restart: on-failure:2
-    depends_on:
-      - db
     entrypoint:
       - bash
       - -c
